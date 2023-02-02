@@ -2,15 +2,13 @@
 //% color=#b5d136 weight=0 icon="\uf055" block="Concatenation"
 namespace concatenation {
     //% blockId=concat_concatenate
-    //% block="$x joined with $y"
-    //% x.defl="list"
-    //% x.shadow=variables_get
+    //% block="$x=variables_get(list) joined with $y=variables_get(list)"
     export function concatenate(x: Array<any>, y: Array<any>): Array<any> {
         return x.concat(y);
     }
     
     //% blockId=concat_extend
-    //% block="concatenate $y to the end of $x"
+    //% block="concatenate $y=variables_get(list) to the end of $x=variables_get(list)"
     export function extend(x: Array<any>, y: Array<any>): void {
         x = concatenate(x, y);
     }

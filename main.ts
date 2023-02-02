@@ -1,5 +1,5 @@
 
-//% color=#b5d136 weight=0 icon="\uf055" block="Concatenation"
+//% color=#5282d1 weight=0 icon="\uf055" block="Concatenation"
 namespace concatenation {
     //% blockId=concat_concatenate
     //% block="%x=variables_get(list) joined with %y=variables_get(list1)"
@@ -13,6 +13,8 @@ namespace concatenation {
         x = concatenate(x, y);
     }
 
+    //% blockId=concat_concatenate_many
+    //% block="concatenate list of arrays %items=variables_get(list)"
     export function concatenate_many(items: Array<Array<any>>): Array<any> {
         let result: Array<any> = [];
         items.forEach((value, index) => {

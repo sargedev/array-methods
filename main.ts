@@ -18,7 +18,7 @@ namespace concatenation {
     export function concatenate_many(items: Array<Array<any>>): Array<any> {
         let result: Array<any> = [];
         items.forEach((value, index) => {
-            result.concat(value);
+            result = result.concat(value);
         })
         return result
     }

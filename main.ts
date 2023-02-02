@@ -9,7 +9,7 @@ namespace concatenation {
         return x.concat(y);
     }
     
-    //% blockId=concat_concatenate
+    //% blockId=concat_extend
     //% block="concatenate $y to the end of $x"
     export function extend(x: Array<any>, y: Array<any>): void {
         x = concatenate(x, y);

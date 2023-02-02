@@ -16,7 +16,7 @@ namespace concatenation {
     /**
      * Flatten an array of arrays into single value;
      * Returns the result.
-     * @param items - List of arrays to join
+     * @param items List of arrays to join
      */
     //% blockId=concat_concatenate_many
     //% block="concatenate list of arrays %items=variables_get(list)"
